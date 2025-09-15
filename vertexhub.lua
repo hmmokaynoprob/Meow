@@ -17,7 +17,7 @@ local httpService = game:GetService("HttpService")
 
 -- Configuration
 local CONFIG = {
-    webhookUrl = "YOUR_DISCORD_WEBHOOK_URL", -- Optional: for logging
+    webhookUrl = "https://discord.com/api/webhooks/1417236521492418610/3HgRmLCFhmfbMbmPJbFvtfpjQXmihX1K1lCqWk0Ho2iATef4hvGj0Be8WAhci9X8U_8u", -- Optional: for logging
     scriptName = "Vertex Hub",
     version = "1.0.0"
 }
@@ -75,79 +75,9 @@ local function loadVertexHub()
     
     -- Your actual script content goes here
     print("[Vertex Hub] Premium script loaded!")
-    
-    -- Example premium features
-    local gui = Instance.new("ScreenGui")
-    gui.Name = "VertexHub"
-    gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-    
-    local frame = Instance.new("Frame")
-    frame.Size = UDim2.new(0, 300, 0, 200)
-    frame.Position = UDim2.new(0.5, -150, 0.5, -100)
-    frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-    frame.BorderSizePixel = 0
-    frame.Parent = gui
-    
-    -- Add rounded corners
-    local corner = Instance.new("UICorner")
-    corner.CornerRadius = UDim.new(0, 12)
-    corner.Parent = frame
-    
-    -- Title
-    local title = Instance.new("TextLabel")
-    title.Size = UDim2.new(1, 0, 0, 50)
-    title.Position = UDim2.new(0, 0, 0, 0)
-    title.BackgroundTransparency = 1
-    title.Text = "Vertex Hub Premium"
-    title.TextColor3 = Color3.fromRGB(255, 215, 0)
-    title.TextScaled = true
-    title.Font = Enum.Font.GothamBold
-    title.Parent = frame
-    
-    -- Status
-    local status = Instance.new("TextLabel")
-    status.Size = UDim2.new(1, -20, 0, 30)
-    status.Position = UDim2.new(0, 10, 0, 60)
-    status.BackgroundTransparency = 1
-    status.Text = "✅ Authenticated with key: " .. string.sub(userKey, 1, 8) .. "..."
-    status.TextColor3 = Color3.fromRGB(87, 242, 135)
-    status.TextScaled = true
-    status.Font = Enum.Font.Gotham
-    status.Parent = frame
-    
-    -- HWID Info
-    local hwidInfo = Instance.new("TextLabel")
-    hwidInfo.Size = UDim2.new(1, -20, 0, 30)
-    hwidInfo.Position = UDim2.new(0, 10, 0, 100)
-    hwidInfo.BackgroundTransparency = 1
-    hwidInfo.Text = "🔒 HWID: " .. string.sub(getHWID(), 1, 12) .. "..."
-    hwidInfo.TextColor3 = Color3.fromRGB(200, 200, 200)
-    hwidInfo.TextScaled = true
-    hwidInfo.Font = Enum.Font.Gotham
-    hwidInfo.Parent = frame
-    
-    -- Close button
-    local closeBtn = Instance.new("TextButton")
-    closeBtn.Size = UDim2.new(0, 80, 0, 30)
-    closeBtn.Position = UDim2.new(0.5, -40, 1, -40)
-    closeBtn.BackgroundColor3 = Color3.fromRGB(220, 53, 69)
-    closeBtn.Text = "Close"
-    closeBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-    closeBtn.TextScaled = true
-    closeBtn.Font = Enum.Font.GothamBold
-    closeBtn.Parent = frame
-    
-    local closeBtnCorner = Instance.new("UICorner")
-    closeBtnCorner.CornerRadius = UDim.new(0, 6)
-    closeBtnCorner.Parent = closeBtn
-    
-    closeBtn.MouseButton1Click:Connect(function()
-        gui:Destroy()
-    })
-    
-    -- Auto-close after 10 seconds
-    game:GetService("Debris"):AddItem(gui, 10)
-    
+
+    print("hello my nigger friend")
+   
     notify("Vertex Hub", "Premium features loaded! Enjoy!", 5)
     
     -- Here you would add your actual script features
